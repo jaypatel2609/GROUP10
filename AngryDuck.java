@@ -1,5 +1,5 @@
 import java.util.Random;
-public class AngryDuck extends WaterFowl implemnets Teleporter
+public class AngryDuck extends WaterFowl implements Teleporter
 {
 
      private int X = 0;
@@ -7,8 +7,7 @@ public class AngryDuck extends WaterFowl implemnets Teleporter
      private Random generator = new Random();
      
      public AngryDuck()
-     {
-          
+     {      
      }
      
      public AngryDuck(String name, String color)
@@ -22,6 +21,7 @@ public class AngryDuck extends WaterFowl implemnets Teleporter
           this.Y = generator.nextInt(500) + 501; 
           System.out.println(this.name + " teleported.");
      }
+     
      public String getPosition()
      {
           String pos = "";
