@@ -24,16 +24,22 @@ public abstract class WaterFowl extends Animal implements Attacker
                     {
                          animal.hit();
                          this.killCount++;
+                         System.out.println(this.name + " attacked " + animal.name);
                          System.out.println(animal.name + " was killed by " + this.name);
+                    }
+                    else if(animal.health == 0)
+                    {
+                         System.out.println(animal.name + " is already dead.");
                     }
                     else
                     {
                          animal.hit();
+                         System.out.println(this.name + " attacked " + animal.name);
                     }     
                }
                else
                {
-                    System.out.println(this.name + " can't attack it died.");
+                    System.out.println(this.name + " can't attack it is already dead.");
                }
           }
      }
