@@ -1,5 +1,9 @@
-public class CuriousBunny extends Animal
+import java.util.Random;
+public class CuriousBunny extends Animal implements Teleporter
 {
+     private Random rand = new Random();
+     private int x = 0;
+     private int y = 0;
      public CuriousBunny()
      {
           
@@ -20,6 +24,16 @@ public class CuriousBunny extends Animal
           }
           else
                System.out.println(this.name+ " died.");
+     }
+     public void teleport()
+     {
+          this.x = rand.nextInt(1000) + 1;
+          this.y = rand.nextInt(500) + 1;
+          System.out.println(this.name + " Teleported");
+     }
+     public String getPosition()
+     {
+          return("(" + this.x + ", "  + this.y +  " )");
      }
 }
      
