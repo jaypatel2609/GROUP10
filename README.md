@@ -6,3 +6,4 @@ interface group assignment
 * Nisarg Barot
 * Jay Patel
 * Prabikjot Singh
+* Ved Pathak
